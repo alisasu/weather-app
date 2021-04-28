@@ -42,7 +42,7 @@ app.get('/help', (req, res, next) => {
     res.render('help', {
         title: 'Help',
         name: 'Alisa Su',
-        cryForHelp: "I have three kids and no money. Why can't I have no kids and three money?"
+        cryForHelp: "You think this help page is for your benefit? No, this is my cry for help. I have three kids and no money. Why can't I have no kids and three money?"
     })
 })
 
