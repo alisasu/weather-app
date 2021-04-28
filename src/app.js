@@ -8,6 +8,7 @@ console.log(__dirname);
 console.log(path.join(__dirname, '../public'));
 
 const app = express();
+const port = process.env.PORT || 3000
 
 // Paths
 const publicDirPath = path.join(__dirname, '../public');
@@ -90,6 +91,6 @@ app.get('*', (req, res, next) => {
         message: 'Page not found.'
     });})
 
-app.listen(3000, () => {
-    console.log('Listening on port 3000!')
+app.listen(port, () => {
+    console.log('Listening on port ' + port)
 })
